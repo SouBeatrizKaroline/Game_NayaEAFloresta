@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Naya: Floresta de Estrelas — uma aventura pixel art curta sobre encontrar luz no escuro.">
-  <title>Naya: Floresta de Estrelas</title>
+  <title>Naya e a Floresta</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="shell">
     <header class="topbar">
-      <div class="brand"><span class="brand-mark">✦</span><div><strong>NAYA</strong><small>FLORESTA DE ESTRELAS</small></div></div>
+      <div class="brand"><span class="brand-mark">✦</span><div><strong>NAYA</strong><small>E A FLORESTA</small></div></div>
       <button class="sound" id="soundButton" aria-label="Ativar ou desativar som">♫ <span>som</span></button>
     </header>
     <section class="game-frame" aria-label="Jogo Naya: Floresta de Estrelas">
       <canvas id="game" width="960" height="540"></canvas>
       <div class="overlay" id="intro">
         <p class="eyebrow">UMA PEQUENA AVENTURA NOTURNA</p>
-        <h1>Naya e a<br><em>Floresta de Estrelas</em></h1>
-        <p class="intro-copy">Quando a lua se esconde, as estrelas caem entre as árvores.<br>Ajude Naya a devolvê-las ao céu.</p>
+        <h1>Naya e a<br><em>Floresta</em></h1>
+        <p class="intro-copy">Quando a lua se esconde, a floresta começa a sussurrar.<br>Escute os animais. Converse com as árvores. Encontre as estrelas.</p>
         <button class="primary" id="startButton">começar a caminhada <span>→</span></button>
-        <p class="hint">setas / WASD para caminhar&nbsp; · &nbsp;espaço para interagir</p>
+        <p class="hint">setas / WASD para caminhar&nbsp; · &nbsp;espaço para escutar</p>
       </div>
       <div class="overlay hidden" id="finish">
         <p class="eyebrow">A FLORESTA LEMBRA SEU NOME</p>
@@ -29,6 +29,7 @@
         <button class="primary" id="againButton">jogar de novo <span>↻</span></button>
       </div>
       <div class="hud hidden" id="hud"><div class="quest"><span class="sun-icon">✦</span><span><b id="count">0</b> / 7 estrelas encontradas</span></div><div class="location">clareira do sussurro</div></div>
+      <div class="talk hidden" id="talk"><b id="speaker">a floresta</b><span id="message"></span></div>
       <div class="toast hidden" id="toast"></div>
     </section>
     <footer><span>um jogo curto por <b>Naya Studio</b></span><span>feito para jogar com calma <i>♥</i></span></footer>
