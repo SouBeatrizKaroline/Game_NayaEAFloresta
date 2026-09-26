@@ -11,16 +11,16 @@
   <main class="shell">
     <header class="topbar">
       <div class="brand"><span class="brand-mark">✦</span><div><strong>NAYA</strong><small>E A FLORESTA</small></div></div>
-      <button class="sound" id="soundButton" aria-label="Ativar ou desativar som">♫ <span>som</span></button>
+      <button class="sound" id="soundButton" type="button" aria-label="Desativar som" aria-pressed="true">♫ <span>som</span></button>
     </header>
     <section class="game-frame" aria-label="Jogo Naya: Floresta de Estrelas">
-      <canvas id="game" width="960" height="540"></canvas>
+      <canvas id="game" width="960" height="540" aria-label="Clareira com Naya, sete estrelas e três personagens"></canvas>
       <div class="overlay" id="intro">
         <p class="eyebrow">UMA PEQUENA AVENTURA NOTURNA</p>
         <h1>Naya e a<br><em>Floresta</em></h1>
         <p class="intro-copy">Quando a lua se esconde, a floresta começa a sussurrar.<br>Escute os animais. Converse com as árvores. Encontre as estrelas.</p>
         <button class="primary" id="startButton">começar a caminhada <span>→</span></button>
-        <p class="hint">setas / WASD para caminhar&nbsp; · &nbsp;espaço para escutar</p>
+        <p class="hint">setas / WASD ou toque para caminhar&nbsp; · &nbsp;espaço ou botão para escutar</p>
       </div>
       <div class="overlay hidden" id="finish">
         <p class="eyebrow">A FLORESTA LEMBRA SEU NOME</p>
@@ -33,6 +33,13 @@
       <div class="talk hidden" id="talk"><b id="speaker">a floresta</b><span id="message"></span></div>
       <div class="toast hidden" id="toast"></div>
     </section>
+    <div class="touch-controls" aria-label="Controles de toque">
+      <div class="direction-pad">
+        <button type="button" data-direction="arrowup" aria-label="Andar para cima">↑</button>
+        <div><button type="button" data-direction="arrowleft" aria-label="Andar para a esquerda">←</button><button type="button" data-direction="arrowdown" aria-label="Andar para baixo">↓</button><button type="button" data-direction="arrowright" aria-label="Andar para a direita">→</button></div>
+      </div>
+      <button type="button" class="listen-button" id="listenButton">escutar</button>
+    </div>
     <footer><span>um jogo curto por <b>Naya Studio</b></span><span>feito para jogar com calma <i>♥</i></span></footer>
   </main>
   <script src="game.js"></script>
