@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="shell">
+  <main class="shell" id="shell">
+    <section class="game-frame" aria-label="Jogo Naya e a Floresta">
     <header class="topbar">
       <div class="brand"><span class="brand-mark">✦</span><div><strong>NAYA</strong><small>E A FLORESTA</small></div></div>
       <button class="sound" id="soundButton" type="button" aria-label="Desativar som" aria-pressed="true">♫ <span>som</span></button>
     </header>
-    <section class="game-frame" aria-label="Jogo Naya: Floresta de Estrelas">
       <canvas id="game" width="960" height="540" aria-label="Clareira com Naya, sete estrelas e três personagens"></canvas>
       <div class="overlay" id="intro">
-        <p class="eyebrow">UMA PEQUENA AVENTURA NOTURNA</p>
-        <h1>Naya e a<br><em>Floresta</em></h1>
+        <p class="eyebrow"><span class="eyebrow-star">✦</span> UMA AVENTURA PELA FLORESTA</p>
+        <h1>Naya <span>e a</span><br><em>Floresta</em></h1>
         <p class="intro-copy">Quando a lua se esconde, a floresta começa a sussurrar.<br>Escute os animais. Converse com as árvores. Encontre as estrelas.</p>
         <button class="primary" id="startButton">começar a caminhada <span>→</span></button>
         <p class="hint">setas / WASD ou toque para caminhar&nbsp; · &nbsp;espaço ou botão para escutar</p>
@@ -28,11 +28,13 @@
         <p class="intro-copy">Você encontrou todas as estrelas.<br>Naya pode voltar para casa.</p>
         <button class="primary" id="againButton">jogar de novo <span>↻</span></button>
       </div>
-      <div class="hud hidden" id="hud"><div class="quest"><span class="sun-icon">✦</span><span><b id="count">0</b> / 7 estrelas encontradas</span></div><div class="location">clareira do sussurro</div></div>
-      <div class="interact hidden" id="interact">espaço <span>escutar</span></div>
+      <div class="hud hidden" id="hud">
+        <div class="quest"><span class="sun-icon">✦</span><div><small>ESTRELAS DA FLORESTA</small><span><b id="count">0</b> / 7 <span class="star-track" id="starTrack" aria-hidden="true">✦ ✦ ✦ ✦ ✦ ✦ ✦</span></span></div></div>
+        <div class="location"><span class="location-dot"></span> clareira do sussurro</div>
+      </div>
+      <div class="interact hidden" id="interact"><kbd>ESPAÇO</kbd> <span>ESCUTAR</span></div>
       <div class="talk hidden" id="talk"><b id="speaker">a floresta</b><span id="message"></span></div>
       <div class="toast hidden" id="toast"></div>
-    </section>
     <div class="touch-controls" aria-label="Controles de toque">
       <div class="direction-pad">
         <button type="button" data-direction="arrowup" aria-label="Andar para cima">↑</button>
@@ -40,7 +42,8 @@
       </div>
       <button type="button" class="listen-button" id="listenButton">escutar</button>
     </div>
-    <footer><span>um jogo curto por <b>Naya Studio</b></span><span>feito para jogar com calma <i>♥</i></span></footer>
+    <div class="game-credit">UMA PEQUENA HISTÓRIA PARA JOGAR COM CALMA <span>✦</span></div>
+    </section>
   </main>
   <script src="game.js"></script>
 </body>
