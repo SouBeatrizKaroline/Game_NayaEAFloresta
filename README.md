@@ -1,13 +1,9 @@
 # Naya e a Floresta
 
-Um jogo curto em pixel art sobre caminhar devagar, ouvir a floresta e devolver as estrelas ao céu. A cada encontro, um animal ou uma árvore oferece uma pista — a conexão é parte do caminho, não apenas decoração.
+Uma pequena caminhada em pixel art para ouvir a floresta e devolver sete estrelas ao céu. Pelo caminho, Naya encontra uma coruja, um cervo e uma árvore antiga.
 
 ## Como jogar
 
-Abra `index.html` no navegador. Use as setas ou **WASD** para caminhar. Encoste nas estrelas para encontrá-las e pressione **espaço** perto dos animais e da árvore antiga para conversar.
+Abra `index.html` no navegador e clique em **começar a caminhada**. Use as setas ou WASD para andar; perto de um personagem, pressione espaço para escutar. No celular, use as setas na tela e o botão **escutar**. O botão de som permite silenciar os efeitos.
 
-## Publicação
-
-Jogo publicado em [SouBeatrizKaroline/NayaEAFloresta_OJogo](https://github.com/SouBeatrizKaroline/NayaEAFloresta_OJogo).
-
-O projeto é feito apenas com HTML, CSS e JavaScript, sem build ou dependências obrigatórias.
+O jogo roda direto no navegador, sem instalação ou dependências obrigatórias.
